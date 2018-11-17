@@ -25,6 +25,7 @@ public class Course {
 	private Category category;
 	
 	private String userId;
+	
 	@Transient
 	private String userName;
 	

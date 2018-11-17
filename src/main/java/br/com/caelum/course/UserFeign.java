@@ -2,6 +2,7 @@ package br.com.caelum.course;
 
 import java.util.List;
 
+import br.com.caelum.course.model.User;
 import feign.Param;
 import feign.RequestLine;
 
