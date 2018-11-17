@@ -17,7 +17,7 @@ import br.com.caelum.course.model.Course;
 @RequestMapping("/course")
 public class CourseController {
 
-	@Value("service.user.ip")
+	@Value("service.url.users")
 	private String userIp;
 		
 	@Autowired
