@@ -1,9 +1,13 @@
 package br.com.caelum.course;
 
-/*@Service*/
+import org.springframework.stereotype.Service;
+
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
+@Service
 public class ServiceCircuitBreaker {
 	
-/*	@HystrixCommand(fallbackMethod = "fallback")
+	@HystrixCommand(fallbackMethod = "fallback")
 	public void request(){
 		throw new RuntimeException();
 	}
@@ -11,5 +15,5 @@ public class ServiceCircuitBreaker {
 	public void fallback(){
 		System.out.println("Deu ruim");
 	}
-*/
+
 }
